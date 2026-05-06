@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Desafio RegEx</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0d62c9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #ffffff;
+        width: 500px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        color: #1e3a8a; /* azul */
+        border-bottom: 3px solid #f97316; /* laranja */
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: #444;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 15px;
+        display: block;
+        color: #1e3a8a;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #1e3a8a;
+        box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
+    }
+
+    button {
+        margin-top: 20px;
+        background-color: #f97316; /* laranja */
+        color: white;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #ea580c;
+    }
+
+    small {
+        color: #777;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Desafio RegEx: Validação Prática</h1>
+    <p>Preencha o formulário garantindo que todos os dados sigam os padrões de Expressão Regular exigidos.</p>
+
+    <label>Cidade (Apenas Letras e Espaços)</label>
+    <input type="text" placeholder="Ex: Rio de Janeiro">
+
+    <label>Data de Envio (Formato: 00/00/0000)</label>
+    <input type="text" placeholder="Ex: 25/12/2025">
+
+    <label>Valor (Apenas números e um separador decimal: . ou ,)</label>
+    <input type="text" placeholder="Ex: 100.50 ou 100,50">
+
+    <label>Nome de Usuário (3 a 16 caracteres: letras, números e _)</label>
+    <input type="text" placeholder="Ex: user_dev_123">
+
+    <label>Senha Forte</label>
+    <input type="password" placeholder="Mínimo 8 caracteres, com letra, número e símbolo">
+
+    <button>Validar e Enviar</button>
+</div>
+
+
+<script src="Ex.JS"> </script>
+
+</body>
+</html>
